@@ -1,0 +1,192 @@
+body {
+    background-color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    /*background: url(../image/background-photo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+}
+
+.body-bg {
+    background: url(../image/background-photo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.body-bg-switcher {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.section-main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-info {
+    background-color: #F4F5F3;
+    border: none;
+    padding: 15px;
+    color: #666769;
+}
+
+/* Шапка - Початок*/
+
+.section-header {
+    background-color: #54A129;
+    color: #fff;
+    border-bottom: 2px solid #000;
+}
+
+a.nav-link {
+    color: #FFF!important;
+}
+
+a.nav-link:hover {
+    background-color: #D2ED2F!important;
+    color: #50BE14!important;
+}
+
+a.nav-link:focus {
+    background-color: #D2ED2F!important;
+    color: #50BE14!important;
+}
+
+/* Шапка - Кінець*/
+
+/* Низ - Початок*/
+
+.section-footer {
+    background-color: #f7f7f7;
+    border: 1px solid #e1e1e1;
+}
+
+.footer-list {
+    list-style: none;
+    list-style-position: outside;
+}
+
+.footer-list-link {
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-list-arrow {
+    color: #f42e25;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.footer-сopyright {
+    padding: 10px 0;
+    background-color: #e1e1e1;
+    border: 1px solid #b0b0b0;
+}
+
+/* Низ - Кінець*/
+
+/* Карусель зі знижками - Початок */
+
+.carousel-control-next, .carousel-control-prev {
+    width: 40px;
+}
+
+.carousel-control-prev {
+    justify-content: left;
+    left: -45px;
+}
+
+.carousel-control-next {
+    justify-content: right;
+    right: -45px;
+}
+
+.carousel-btn {
+    height: 40px;
+    width: 40px;
+    color: #000;
+    background-color: rgba(229, 229, 229, .5);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+.carousel-card {
+    background-color: #fff;
+    border: solid 2px #D2ED2F;
+    border-radius: 1rem 0.25rem 1rem 0.25rem;
+}
+
+.carousel-card-body {
+    background-color: #F6F6F6;
+}
+
+.carousel-card-old-price {
+    color: #CACACA;
+    text-decoration: line-through;
+}
+
+.carousel-card-price {
+    font-weight: 700;
+    color: #50B948;
+}
+
+.carousel-card-descript {
+    color: #848587;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper:after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.wrapper img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    position: absolute;
+    top: 0;
+}
+
+.btn-rezerv {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    background-color: #50BE14;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-rezerv:hover {
+    color: #fff;
+    background-color: #54A129;
+}
+
+/* Карусель зі знижками - Кінець */
+
+/* Фотогалерея - Початок */
+
+#image-gallery .modal-footer {
+    display: block;
+}
+
+.thumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Фотогалерея - Початок */

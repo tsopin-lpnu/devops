@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>Аптечка</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E5MN3XZ2CV"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-E5MN3XZ2CV');
+  </script>
+</head>
+
+<body>
+  <div class="custom-control custom-switch body-bg-switcher">
+    <input type="checkbox" class="custom-control-input" id="bg-switch">
+    <label class="custom-control-label" for="bg-switch">&nbsp;</label>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light section-header shadow nav-pills">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="img-fluid" src="image/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center pt-4 font-weight-bold" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>
+              Головна</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-medkit" aria-hidden="true"></i> Послуги</a>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="services.html">Лікар Онлайн</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html"><i class="fa fa-camera-retro" aria-hidden="true"></i>
+              Фотогалерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="history.html"><i class="fa fa-book" aria-hidden="true"></i> Історія</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html"><i class="fa fa-phone" aria-hidden="true"></i> Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section-main">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">Онлайн Аптечка</h1>
+        <p class="lead">Аптечний сервіс мережі аптек "Аптечка" – це не тільки мережа аптек в Україні, але й сайт
+          aptechka.ua – аптека в режимі онлайн з можливістю здійснення резервування препаратів. Різновидом онлайн версії
+          є мобільний додаток для смартфона «Аптечка». Він гарантує зручність і мобільність замовлення всього
+          каталогу медико-фармацевтичної продукції.</p>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center px-5">
+          <h2>Товари зі знижками</h2>
+          <hr class="my-4">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card-deck" id="card-deck_1">
+
+
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card-deck" id="card-deck_2">
+
+                </div>
+              </div>
+
+
+            </div>
+            <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+              <i class="fa fa-arrow-left carousel-btn shadow" aria-hidden="true"></i>
+            </a>
+            <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+              <i class="fa fa-arrow-right carousel-btn shadow" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="zakazModal" tabindex="-1" aria-labelledby="zakazModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="zakazModalLabel">Оформлення бронювання</h5> <br>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="product-name" class="col-form-label">Назва товару</label>
+                  <input type="text" class="form-control" id="product-name" disabled>
+                </div>
+                <div class="form-group">
+                  <label for="client-name" class="col-form-label">Ваше ім'я:</label>
+                  <input type="text" class="form-control" id="client-name">
+                </div>
+                <div class="form-group">
+                  <label for="client-tel" class="col-form-label">Номер телефону:</label>
+                  <input type="text" class="form-control" id="client-tel">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Примітки:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Відмінити</button>
+              <button type="button" class="btn btn-primary" id='zakazSend'>Відправити</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+          <div class="toast-header">
+            <strong class="mr-auto">Дякуємо</strong>
+            <small>1 хв. тому</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Ваше бронювання успішно оформлено.
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-4">
+        <div class="col-12 section-info">
+          <h2 class="text-center">Наша аптека працює щоб кожен Ваш день ставав краще.</h2>
+
+          <p>Відмінною рисою торгівельних точок є вільний доступ до більшості продукції. Зручний каталог з товарами на
+            сайті спрощує вибір, дозволяючи неспішно ознайомитись з наявним асортиментом. Також не варто боятися
+            заплутатися у розмаїтті пропозицій. При необхідності підібрати цікаві фармацевтичні товари або медикаменти
+            допоможе кваліфікований персонал торгового залу. Додатковою перевагою є наявність продукції спеціалізованого
+            і допоміжного призначення. Це суттєво економить час, дозволяючи купити все в одному місці.</p>
+          <p>Відвідавши аптеку, Ви зможете придбати:</p>
+          <ul>
+            <li>Медикаменти вітчизняного і зарубіжного виробництва.</li>
+            <li>Аптечну косметику, необхідну для повноцінного догляду за тілом і рішення косметичних проблем.</li>
+            <li>Дитячі товари включають повний перелік виробів, необхідних дитині, від підгузків до спеціалізованої
+              побутової хімії.</li>
+            <li>Товари для мам, забезпечують необхідну допомогу у період годування грудьми і догляду за малюком.</li>
+            <li>Сонцезахисні засоби, каталог яких буде актуальний для захисту шкіри від ультрафіолетового
+              випромінювання, і вирішити проблеми, пов'язані з прийомом надмірної кількості сонячних ванн.</li>
+            <li>Медичні вироби, представлені діагностичними пристроями, ортопедичними товарами і апаратами для
+              проведення лікувальних процедур.</li>
+            <li>Засоби гігієни, серед яких шампуні, гелі, мило, зубна паста і щітки, а також серветки та інші елементи
+              індивідуального догляду.</li>
+            <li>Вітаміни і БАДи призначені для стимуляції біологічних процесів в організмі.</li>
+          </ul>
+          <p>Розуміючи наскільки важливим є Ваша довіра, ми враховуємо всі чинники, здатні вплинути на якість наших
+            товарів. У прагненні забезпечити своїх клієнтів доступними препаратами, ми ніколи не ставимо ціни вище
+            якості. Ліки і товари медичного призначення, що ми пропонуємо, сертифіковані на території України. Нашими
+            партнерами є надійні виробники, що гарантують дотримання всіх технологічних процесів. Ми стежимо за
+            дотриманням термінів і умов зберігання, щоб кожен куплений препарат зміг повноцінно виконати покладені на
+            нього завдання.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer class="section-footer">
+    <div class="container">
+      <div class="row my-4">
+        <div class="col">
+          <img class="img-fluid float-right" src="image/logo.png" alt="">
+        </div>
+        <div class="col-3">
+          <ul class="footer-list">
+            <li>
+              <em><i class="fa fa-map-marker" aria-hidden="true"></i></em>
+              79000, Україна<br> м. Львів<br>вул. Ст. Бандери - 12
+            </li>
+            <li>
+              <em><i class="fa fa-phone" aria-hidden="true"></i></em>
+              <a href="tel:0800123456">0 800 123 456</a>
+            </li>
+            <li>
+              <em><i class="fa fa-globe" aria-hidden="true"></i></em>
+              <a href="https://aptechka.ua">aptechka.ua</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="footer-list">
+            <li><i class="fa fa-angle-right footer-list-arrow"></i><a class="footer-list-link"
+                href="index.html">Головна</a></li>
+            <li><i class="fa fa-angle-right footer-list-arrow"></i><a class="footer-list-link"
+                href="services.html">Послуги</a></li>
+            <li><i class="fa fa-angle-right footer-list-arrow"></i><a class="footer-list-link"
+                href="gallery.html">Фотогалерея</a>
+            </li>
+            <li><i class="fa fa-angle-right footer-list-arrow"></i><a class="footer-list-link"
+                href="history.html">Історія</a></li>
+            <li><i class="fa fa-angle-right footer-list-arrow"></i><a class="footer-list-link"
+                href="contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-сopyright">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="m-0 text-center">© 2021 Аптечка. ТМ і Права захищені.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="js/null.js"></script>
+  <script src="js/lab-4.js"></script>
+</body>
+
+</html>
